@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="flavors.css">
+  <title>Big Scoop Ice Cream | Flavors</title>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar" style="background-color:mediumpurple; box-shadow:0px 2px 6px;">
+    <img src="images/Big-Scoop-Logo.png" alt="Logo" style="border-radius:20px;">
+
+    <a href="index.html">
+      <button style="border-radius:60px; padding:30px; border:solid 3px;">Home</button>
+    </a>
+
+    <a href="Flavorpage.html">
+      <button style="border-radius:60px; padding:30px; border:solid 3px;">Flavors</button>
+    </a>
+
+    <button style="border-radius:60px; padding:30px; border:solid 3px;" onclick="cinfo()">Contact</button>
+
+    <div id="conta" style="display:none; margin-top:10px;">
+      <a href="https://www.instagram.com/itsmejaaaaaaaa?igsh=MWo2cXB6d2h0Y2RnMQ==" target="_blank">
+        <img src="images/Ig.png" alt="Instagram" style="height:90px; width:150px;">
+      </a>
+    </div>
+  </div>
+
+  <!-- TITLE BOX -->
+  <div class="title-box">
+    <h2 class="page-title">Big Scoop Ice Cream Flavors</h2>
+  </div>
+
+  <!-- PRODUCTS GRID -->
+  <div class="products content">
+
+    <!-- UBE -->
+    <div class="card" data-price="140">
+      <p class="name">Ube</p>
+      <img src="images/Ube.jpg" alt="Ube">
+      <p class="price">₱140</p>
+      <div class="qty">
+        <button onclick="changeQty(this,-1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this,1)">+</button>
+      </div>
+    </div>
+
+    <!-- STRAWBERRY -->
+    <div class="card" data-price="140">
+      <p class="name">Strawberry</p>
+      <img src="images/Strawberry.jpg" alt="Strawberry">
+      <p class="price">₱140</p>
+      <div class="qty">
+        <button onclick="changeQty(this,-1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this,1)">+</button>
+      </div>
+    </div>
+
+    <!-- VANILLA -->
+    <div class="card" data-price="140">
+      <p class="name">Vanilla</p>
+      <img src="images/Vanilla.jpeg" alt="Vanilla">
+      <p class="price">₱140</p>
+      <div class="qty">
+        <button onclick="changeQty(this,-1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this,1)">+</button>
+      </div>
+    </div>
+
+    <!-- AVOCADO -->
+    <div class="card" data-price="140">
+      <p class="name">Avocado</p>
+      <img src="images/Avocado.jpeg" alt="Avocado">
+      <p class="price">₱140</p>
+      <div class="qty">
+        <button onclick="changeQty(this,-1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this,1)">+</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CHECKOUT BOX -->
+  <div class="checkout-box">
+    <p>Total: ₱<span id="total">0</span></p>
+    <button id="checkoutBtn" onclick="checkout()">Checkout</button>
+  </div>
+
+  <!-- FOOTER HELP -->
+  <footer class="footer">
+    ❔ Help and Support 🗯️
+    <p>If you need help or guidance, please contact us using the contact button above.</p>
+  </footer>
+
+</body>
+</html>
